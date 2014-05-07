@@ -7,7 +7,7 @@ title: Several types of HTML content supported in the theme of lanyon
 
 &lt;div class="message"&gt;
 
-&nbsp;&nbsp;test message class.
+&emsp;&emsp;test message class.
 
 &lt;/div&gt;
 
