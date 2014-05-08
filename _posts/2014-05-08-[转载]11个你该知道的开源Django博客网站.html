@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Eleven Django blog engines you should know | MontyLounge Blog</title>
+        <meta charset="utf-8" /> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="MontyLounge Blog - a little of this, a little of that.">
+
+        <link rel="shortcut icon" href="/theme/custom/img/favicon.ico" type="image/x-icon"/>
+
+        <link rel="stylesheet" href="/theme/components/bootstrap/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/components/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/components/font-awesome/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300italic|Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/components/prism/css/prism.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/components/prism/css/prism-okaidia.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/custom/css/main.css" type="text/css" />
+
+        
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="/css/ie.css"/>
+                <script src="/js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="/css/ie6.css"/><![endif]-->
+
+        <!-- script type="text/javascript" src="//use.typekit.net/mzm3mmi.js"></script -->
+        <!-- script type="text/javascript">try{Typekit.load();}catch(e){}</script -->
+
+</head>
+
+<body>
+
+<header>
+    <div class="new-header">
+        <div class="header-content center">
+       <a href="/index.html" class="logo"><img alt="Monty Lounge Industries" src="/static/images/monty_blue.png" width="320"></a>
+       </div>
+    </div>
+</header>
+
+<div id="wrap">
+
+        <div class="container" id="content">
+        <div class="row">
+            <div class="span8 center">
+                <section class="">
+  <article>
+    <header> 
+      <span class="post-date">February 2010</span>
+      <h1 class="post-title">Eleven Django blog engines you should know</h1>
+    </header>
+
+    
+    
+    
+    <div class="post-content ">
+
+        
+    <p>About two years ago <a href="http://michaeltrier.com/">Michael Trier</a> blogged "Where's the Django Blog?". <a href="http://b-list.org">James Bennett</a> later followed up with <a href="http://www.b-list.org/weblog/2007/nov/29/django-blog/">Where is the Django Blog Application</a> in which he discusess why there is no "definitive" Django blog engine. More recently <a href="http://pydanny.blogspot.com/">Daniel Greenfeld</a> asked <a href="http://pydanny.blogspot.com/2009/04/show-me-your-open-source-django-blog.html">Show me your open source Django blog</a> in which he defines various requirements needed for a project. Ever since reading that post I've been meaning to write <em>this</em> post. </p>
+<p>Below are a few blog engines I selected that I believe you should be aware of, sorted by most recently updated. If the author provided a description I used that. If not, I summarized what I know about the project. If you have your own blog engine we should be aware of, please post the name and url in the comments.</p>
+<p><a href="http://byteflow.su/">Byteflow</a> is not included because the project site is down at the time of this post.</p>
+<h3>Biblion</h3>
+<p><em>Tagline:</em> The eldarion.com blog app intended to be suitable for site-level company and project blogs.</p>
+<p><em>Source:</em> <a href="http://github.com/eldarion/biblion">http://github.com/eldarion/biblion</a></p>
+<p><em>Last updated</em>: Feb 9, 2010</p>
+<p><em>Live example:</em><a href="http://eldarion.com/blog/">http://eldarion.com/blog/</a></p>
+<p><em>Description</em>: Biblion was the eldarion.com blog which we've extracted and open sourced. It is currently positioned as being used for site/project blogs such as eldarion.com and pinaxproject.com. We intend for this app to replace the internal Pinax blog app once we've made it feature complete.</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>support for multiple channels (e.g. technical vs business)</li>
+<li>use of Creole as markup format</li>
+<li>Atom feeds</li>
+<li>previewing of blog posts before publishing</li>
+<li>optional ability to announce new posts on twitter</li>
+</ul>
+<h3>Django-article</h3>
+<p><em>Tagline:</em> Sophisticated blogging engine for Django-powered sites.</p>
+<p><em>Source:</em> <a href="http://bitbucket.org/codekoala/django-articles/">http://bitbucket.org/codekoala/django-articles/</a></p>
+<p><em>Last updated</em>: February 08, 2010 </p>
+<p><em>Live example:</em><a href="http://codekoala.com">codekoala.com</a></p>
+<p><em>Description</em>: Author Josh VanderLinden. Sophisticated blogging engine for Django-powered sites.</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>Tags for articles, with a tag cloud template tag</li>
+<li>Auto-completion for tags in the Django admin</li>
+<li>Ability to post in the future</li>
+<li>Article expiration facilities</li>
+<li>Allows articles to be written in plain text/HTML or using Markdown, ReStructured Text, or Textile markup</li>
+<li>Related articles</li>
+<li>Follow-up articles</li>
+<li>Disqus comments</li>
+<li>Article archive, with pagination</li>
+<li>Internationalization-ready</li>
+<li>Detects links in articles and creates a per-article index for you</li>
+<li>Word count</li>
+<li>RSS feeds for the latest articles</li>
+<li>RSS feeds for the latest articles by tag</li>
+</ul>
+<h3>Flother</h3>
+<p><em>Tagline:</em> The Python- and Django-based code for the website running <a href="http://flother.com">flother.com</a></p>
+<p><em>Source:</em> <a href="http://github.com/flother/flother">http://github.com/flother/flother</a></p>
+<p><em>Last updated</em>: February 01, 2010</p>
+<p><em>Live example:</em><a href="http://www.flother.com/blog/">http://www.flother.com/blog/</a></p>
+<p><em>Description</em>: Flother is the personal web site for Matt Riggott.  It's been through many
+iterations but now it runs on Python 2.5 and Django 1.1 and is in active
+development.  This is the complete source code, released under the GPL v3.0.</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>six main apps within the project</li>
+<li>Akismet-moderated comments</li>
+<li>Entries are formatted using Markdown and can be public, private, or draft.</li>
+<li>Draft entries can be previewed on the site by admin users.</li>
+<li>photos and places apps ( currently in active development and will see a full geocoded photo library with an option to import from Flickr.)</li>
+<li>Thumbnails of images are created and displayed in the admin. A Javascript-based interface for using files in blog entries is provided</li>
+<li>Google's AJAX API is used (server-side) to perform a site-wide search and return results on the site itself.</li>
+</ul>
+<h3>Basic-Blog</h3>
+<p><em>Tagline:</em> Simple prebuilt applications. </p>
+<p><em>Source:</em> <a href="http://github.com/nathanborror/django-basic-apps">http://github.com/nathanborror/django-basic-apps</a></p>
+<p><em>Last updated</em>: February 01, 2010</p>
+<p><em>Live example:</em> <a href="http://nathanborror.com/">http://nathanborror.com/</a></p>
+<p><em>Description</em>: A terrific example of a basic blog engine. The basic-apps project is a great demonstration in creating reusable apps. When taking into consideration the larger "basic-apps" project there are even more features available that integrate with the basic-blog app. Django-Mingus uses the basic-blog, basic-media, and basic-inlines apps for its core blogging engine.</p>
+<p><em>Notable features:</em> This app provides posts, categories, tags, comments, markdown support, and a basic template system.</p>
+<h3>Hello-Newman</h3>
+<p><em>Tagline:</em> na.</p>
+<p><em>Source:</em> <a href="http://github.com/gregnewman/hello-newman">http://github.com/gregnewman/hello-newman</a></p>
+<p><em>Last updated</em>: January 24, 2010</p>
+<p><em>Live example:</em> <a href="http://gregnewman.org/">http://gregnewman.org/</a></p>
+<p><em>Description</em>: My segregated blog platform that replaced 20seven.org under the new domain gregnewman.org. </p>
+<p><em>Notable features:</em> Since there isn't a list to pull from, here's what I pulled from a quick review of Newman's site and the code - entries, categories, "distractions", hit tracking, and a concept of "journals".</p>
+<h3>Banjo</h3>
+<p><em>Tagline:</em> Banjo is a blogging application with bells and whistles, written using the Django framework.</p>
+<p><em>Source:</em> <a href="http://getbanjo.com/">http://getbanjo.com/</a></p>
+<p><em>Last updated</em>: January 2010</p>
+<p><em>Live example:</em> <a href="http://getbanjo.com/blog/">getbanjo.com/blog/</a> ... I assume.</p>
+<p><em>Description</em>: Banjo is suitable for any blog, but is most appropriate for people who wish to integrate a blog into an existing Django application, such as a Satchmo store or a forum.</p>
+<p>We have released Banjo as an open-source application with extremely liberal "BSD" licensing. So you can use it for business or personal sites with no concerns.""</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>Multiblog capable from the start. </li>
+<li>Skinning is built in. </li>
+<li>Trackback and Pingback are supported. </li>
+<li>Posting via XML-RPC.</li>
+</ul>
+<h3>djangotechblog</h3>
+<p><em>Tagline:</em> A blogging engine for django, with techies in mind.</p>
+<p><em>Source:</em> <a href="http://code.google.com/p/djangotechblog/">http://code.google.com/p/djangotechblog/</a></p>
+<p><em>Last updated</em>: Dec 21, 2009</p>
+<p><em>Live example:</em> <a href="http://www.willmcgugan.com/">http://www.willmcgugan.com/</a></p>
+<p><em>Description</em>: A versatile blogging engine aimed at coders. Author Will McGugan.</p>
+<p><em>Notable features:</em>  Read <a href="http://www.willmcgugan.com/tag/techblog/">Lowdown on Django-Techblog</a>.</p>
+<h3>Django-YABA</h3>
+<p><em>Tagline:</em> Yet Another Blog Application.</p>
+<p><em>Source:</em> <a href="http://github.com/f4nt/django-yaba/">http://github.com/f4nt/django-yaba/</a></p>
+<p><em>Last updated</em>: November 03, 2009</p>
+<p><em>Live example:</em> <a href="http://www.f4ntasmic.com">http://www.f4ntasmic.com</a> - this is now a blogspot blog. You should read the author's post <a href="http://www.f4ntasmic.com/2010/01/more-changes.html">More Changes</a> which details some updates regarding the YABA project.</p>
+<p><em>Description</em>: From the author, " I wanted something 
+a bit more flexible though, so I decided to build it with the idea of being able to plug it anywhere with minimal 
+configuration. I'm going to leverage YAML ( http://www.yaml.de/en/ ) for the theme of the blog, so that you can have a 
+fairly pretty blog out of the box within minutes. Anyways, let me know if you have any questions."</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>Dynamic Themes</li>
+<li>WYSIWG Editor</li>
+<li>Blog Posts</li>
+<li>RSS Feed</li>
+<li>BlogRoll</li>
+<li>Articles</li>
+<li>Comments</li>
+<li>Social Media</li>
+<li>Search</li>
+<li>Galleries</li>
+</ul>
+<h3>Shifting Bits</h3>
+<p><em>Tagline:</em> A Django Based Blog.</p>
+<p><em>Source:</em> <a href="http://github.com/paltman/shiftingbits/">http://github.com/paltman/shiftingbits/</a></p>
+<p><em>Last updated</em>:November 01, 2009</p>
+<p><em>Live example:</em> <a href="http://paltman.com/">http://paltman.com/</a></p>
+<p><em>Description</em>: Read: <a href="http://paltman.com/2008/sep/08/shifting-bits-another-django-blog-engine/">Shifting Bits - Another Blog Engine</a> and <a href="http://paltman.com/2008/oct/13/shifting-bits-makes-progress/">Sifting Bits Makes Progress</a>.</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>Basic blog post mode driven using generic date based views with redirects so that the WordPress url date format (numbered month versus the prettier and django default of short month name) get mapped properly so that none of your links break.</li>
+<li>WordPress to Django Migration Script</li>
+<li>Tagging via django-tagging</li>
+<li>Comments via the new django.contrib.comments and using the live markdown preview editor, wmd.</li>
+<li>Full RSS feeds (both latest feeds and by tag)</li>
+</ul>
+<h3>Mighty Lemon</h3>
+<p><em>Tagline:</em> A Django blog. Formerly Oebfare by brosner.</p>
+<p><em>Source:</em> <a href="http://github.com/mightylemon/mightylemon">http://github.com/mightylemon/mightylemon</a></p>
+<p><em>Last updated</em>: April 20,2009</p>
+<p><em>Live example:</em> <a href="http://www.willmcgugan.com/">http://www.willmcgugan.com/</a></p>
+<p><em>Description</em>: <strike>oebfare</strike>Mighty Lemon is the source code that runs the blog at <strike>http://oebfare.com</strike><a href="http://justinlilly.com">justinlilly.com</a>(?). The code
+is freely available for you to use however you want.</p>
+<p><em>Notable features:</em> </p>
+<ul>
+<li>markdown support</li>
+<li>pygments (code highlighting)</li>
+<li>django-comment-utils (commenting)</li>
+<li>django-tagging (tagging)</li>
+<li>django-mailer (mailing)</li>
+<li>django-gravatar (gravatars for comments)</li>
+<li>django-elsewhere (social networks)</li>
+</ul>
+<h3>Coltrane</h3>
+<p><em>Tagline:</em> Coltrane.</p>
+<p><em>Source:</em> <a href="http://code.google.com/p/coltrane-blog/">http://code.google.com/p/coltrane-blog/</a></p>
+<p><em>Last updated</em>: Oct 12, 2008</p>
+<p><em>Live example:</em> <a href="http://b-list.org">b-list.org</a> ... I may be wrong.</p>
+<p><em>Description</em>:  This is the project referenced throughout the excellent <a href="http://readernaut.com/books/1590599969/">Practical Django Projects</a>. James Bennett is the author of both the book and the blog engine.</p>
+<p><em>Notable features:</em> Since there isn't a list to pull from, here's what I pulled from a quick review of the code - posts, tagging, categories, and comments.</p>
+<h3>Conclusion</h3>
+<p>So when asking "where is the Django blog engine" today, there are a few choices available to you. Will there ever be a "defacto" Django blog engine? I don't think so. Is there room for one? I do think so, but it would take an collective effort to create it, and support it. What the team is doing with <a href="http://www.django-cms.org/">Django-CMS</a> is the level of effort that is needed. And that's a lot of work. As the author of <a href="http://github.com/montylounge/django-mingus">Mingus</a> (make sure to check out the <a href="http://github.com/montylounge/django-mingus/blob/master/AUTHORS">contributors</a>) I enjoy hacking on it. But Mingus is and always be a concept project; a hobby.</p>
+<p>So take a look at the above. There's a ton of terrific stuff in there. If you were looking to start a Django powered blog, now you have at least the eleven Django powered blog engines mentioned above, and Mingus :). Thanks to the authors for their contributions to open source.</p>
+    </div>
+
+    
+    
+
+  </article>
+</section>
+
+<!-- div class="more-content">
+  <a class="button" href="/">Enjoy more posts</a>
+</div -->
+
+       
+            </div>
+        </div>
+    </div>
+    </div>
+
+<footer>
+   <div class="footer">
+        <div class="footerContent center">
+            <a href="http://twitter.com/montylounge/" target="_blank"><span class="icon-twitter round whiteBG"></span>&nbsp;&nbsp;Catch me on Twitter</a>
+            <span class="legal">&copy; 2013 <a href="http://www.montylounge.com">Monty Lounge Industries, LLC</a>
+                <br/>
+            Made with pride in <a href="http://www.njtechlist.com/companies/" target="_blank">New Jersey</a>.
+            </span>
+        </div>
+   </div>
+</footer>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker('UA-9594592-1');
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+    <script src="/theme/components/prism/js/prism.js"></script>
+
+</body>
+</html>
